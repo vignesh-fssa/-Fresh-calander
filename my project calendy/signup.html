@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New card create</title>
+    <link rel="stylesheet" href="./assets/pages/signup.css">
+
+</head>
+<body>
+    <form id="new">
+
+
+
+        <div class="container">
+
+          <div class="input-box">
+            <span class="details">First Name </span>
+            <input class="text" type="text" placeholder="enter your website" required />
+          </div> 
+
+        
+
+        <div class="input-box">
+            <span class="details" >Email ID:</span>
+            <input class="text" type="text" id="email" placeholder="Enter your email" required />
+          </div>
+
+          <div class="input-box">
+            <span class="details">Password:</span>
+            <input  class="text"type="text"  id="password"placeholder="Enter your password" required />
+          </div>
+
+           <!-- <div class="input-box">
+            <span class="details">website Url </span>
+            <input class="text" type="text" placeholder="enter your website" required />
+          </div>  -->
+       
+          <button class="save">submit</button>
+        </div>
+    </div>
+
+    </form>
+
+
+
+    <script>
+ 
+ let userArr = [];
+    
+    
+    let form = document.getElementById("form");
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+    
+      let firstname = document.getElementById("firstname").value;
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("password").value;
+      let object={};
+      
+      object.firstname = username
+
+    
+    });
+        
+  
+      
+    </script>
+</body>
+</html>

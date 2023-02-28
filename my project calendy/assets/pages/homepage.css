@@ -1,0 +1,177 @@
+.calender {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 9.5em;
+  font-family: cursive;
+}
+
+body {
+    background-color:whitesmoke;
+  }
+  
+
+.startpage {
+  font-size: 30px;
+  font-family: cursive;
+  color: rgb(255, 0, 0);
+}
+.taskbar {
+  display: flex;
+  gap: 1.5em;
+}
+.container {
+  display: flex;
+  gap: 0.3em;
+  color: black;
+  font-size: 22px;
+}
+.contain {
+  display: flex;
+  gap: 1em;
+}
+
+.dash {
+  font-size: 30px;
+  font-family: cursive;
+  margin: 35px 0px 0px 100px;
+}
+
+.dash:hover {
+  opacity: 1px;
+  color: rgb(255, 0, 0);
+  text-shadow: 0ch;
+}
+
+.content {
+  display: flex;
+  gap: 30em;
+}
+.days {
+  font-size: 20px;
+  font-family: cursive;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 150px;
+  height: 25px;
+  text-align: center;
+  margin-top: 40px;
+  background-color:#005BFF;
+  color: whitesmoke;
+}
+
+.hellopage {
+  border: 2px solid black;
+  width: 400px;
+  height: 350px;
+  border-radius: 20px;
+  margin: 80px 0px 0px 100px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  color:black ;
+  
+}
+
+.name {
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin: 50px 0px 0px 20px;
+}
+.s-content {
+  font-size: 18px;
+  font-family: cursive;
+  margin: 30px 0px 0px 60px;
+}
+
+.progress {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 30px 0px 0px 130px;
+  font-weight: bold;
+}
+
+.View {
+    margin: 20px 0px 0px 90px;
+    border: 2px solid black;
+    border-radius:9px;
+    width: 200px;
+    font-size: 20px;
+   font-family: cursive;
+    height: 35px;
+    background-color:#005BFF;
+    color: whitesmoke;
+}
+
+.View:hover{
+    background-color: tomato;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+} 
+
+.whole-div {
+    display: flex;
+}
+.full-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.clock {
+    border: 2px solid black;
+    width: 180px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 60px 0px 0px 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background-color:rgb(153, 204, 255) ;
+    color: black;
+    font-size: 18px;
+   font-family: cursive;
+   
+  
+}
+.extra-div {
+    margin:  20px 0px 0px 30px;
+}
+
+.book-img {
+    margin: 30px 0px 0px 90px;
+}
+
+.booking-image {
+    display: flex;
+    margin: 60px 0px 0px 0px;
+}
+
+.content {
+    font-size:20px;
+    font-family: cursive;
+    margin: 100px 0px 0px 100px;
+}
+
+.content-1{
+    font-size:20px;
+    font-family: cursive;
+    margin-top: 150px;
+    position: relative;
+    right: 190px;
+
+}
+.complete{
+  display: flex;
+  flex-direction: row;
+}
+
+.avater {
+    margin: 40px 2px 100px 0px;
+    position: relative;
+    right: 170px;
+    top: 54px;
+
+} 
+
+
+
+.calendar-image {
+  margin: 50px 0px 0px 80px;
+
+}

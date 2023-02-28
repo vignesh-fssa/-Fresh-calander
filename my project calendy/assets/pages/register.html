@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="../pages/register.css">
+
+
+
+</head>
+
+<body>
+    <div class="whole-div">
+        <!-- <img class="logo" src="../images/freshworks-logojpg-removebg-preview.png"> -->
+        <div class="sub-div">
+            <h2 class="content">
+                Registration for FRESH
+            </h2>
+            <p class="para">
+                Please fill up the form to officially register for FSSA 2.0.    
+            </p>
+        </div>
+
+
+            <div class="container">
+                <form action="#">
+                  <div class="user-details">
+                    <div class="input-box">
+                      <span class="details">First Name</span>
+                      <input type="text"id="firstname" placeholder="Enter  first your name" required pattern="[A-Za-z]" />
+                    </div>
+          
+                    <div class="input-box">
+                      <span class="details">Last Name</span>
+                      <input type="text" id="lastname"placeholder="Enter your last name" required />
+                    </div>
+          
+                    <div class="input-box">
+                      <span class="details">Date of Birth</span>
+                      <input type="date" id="birthday"placeholder="dd/mm/yyyy" required />
+                    </div>
+                    <div class="input-box">
+                      <span class="details">Age</span>
+                      <input type="tel" id="age" placeholder="age" required />
+                    </div>
+                    <div class="input-box">
+                      <span class="details">Gender</span>
+                      <input type="gender" id="gender" placeholder="Enter your gender" required />
+                    </div>
+                    <div class="input-box">
+                      <span class="details">Company Name</span>
+                      <input type="text" id="companyname" placeholder="Enter Company name" required />
+                    </div>
+                    <div class="input-box">
+                      <span class="details"> contact number</span>
+                      <input type="text" id="contactnumber" placeholder=" contact number" required />
+                    </div>
+                    <div class="input-box">
+                      <span class="details">Email ID:</span>
+                      <input type="text" id="email" placeholder="Enter your email" required />
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">password</span>
+                        <input type="text" id="password" placeholder="Enter your password" required />
+                      </div>
+  
+
+
+                    <div class="input-box">
+                        <span class="details">Exprience</span>
+                        <input type="text" id="Exprience" placeholder=" Enter your Exprience" required>
+
+                    </div>
+
+
+                    <div class="input-box">
+                        <span class="details">address</span>
+                        <input type="text" id="address" placeholder=" Enter your address" required>
+
+                    </div>
+
+
+                    <div class="input-box">
+                        <span class="details">Language</span>
+                        <input type="text" id="Language"placeholder=" Enter your Language" required />
+                      </div>
+  
+          
+                    <div class="input-box">
+                      <span class="details">How will use  you the website </span>
+                      <input type="text" id="website" placeholder="enter your website" required />
+                    </div>
+          
+                    
+                    <div class="input-box">
+                      <span class="details">Add Information</span>
+                      <input type="text"id="information" placeholder=" Enter your Additional information" required />
+                    </div>
+          
+                    <div class="input-box">
+                      <span class="details">Designation</span>
+                      <input type="text" id="Designation" placeholder=" Enter your Designation" required />
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">City</span>
+                        <input type="text" id="city" placeholder=" Enter your City" required>
+
+                    </div>
+
+
+                    <div class="input-box">
+                        <span class="details">State</span>
+                        <input type="text" id="state" placeholder=" Enter your State" required>
+
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Zipcode</span>
+                        <input type="text" id="zipcode" placeholder=" Enter your Zipcode" required>
+
+                    </div>
+
+
+          
+          
+          
+          
+                  </div>
+          <div  class="save">
+                    <button>Save</button>
+                   <button>Cancel</button>
+                  </div>
+              </form>
+                      
+            </div>
+        
+
+
+
+
+         
+ <script>
+
+
+// let array1 = []; 
+
+
+
+        let form = document.getElementById("register_from");
+          let userArr = [];
+          if (localStorage.getItem("user_data") != null) {
+            userArr = JSON.parse(localStorage.getItem("user_data"));
+          }
+          const firstName = document.getElementById("firstname").value;
+          const lastName = document.getElementById("lastname").value;
+          const email = document.getElementById("email").value;
+          const birthday = document.getElementById("birthday").value;
+          const mobileNumber = document.getElementById("contactnumber").value;
+          const age= document.getElementById("age").value;
+          const State=document.getElementById("State").value;
+          const gender= document.getElementById("gender").value;
+          const address = document.getElementById("address").value;
+          const city=document.getElementById("city").value;
+          const addinformation=document.getElementById("addinformation,").value;
+          const zipcode=document.getElementById("zipcode").value;
+          const Designation=document.getElementById("Designation").value;
+          const password = document.getElementById("password").value;
+          const register =document.getElementById("register").value;
+          const cancel=document.getElementById("cancel").value;
+
+
+
+
+
+          let object1 = {
+            firstName,
+            lastName,
+            contactnumber,
+            information,
+            website,
+            companyname,
+            Designation,
+            birthday,
+            age,
+            email,
+            password,
+            expreince,
+            gender,
+            address,
+            city,
+            state,
+            zipcode
+
+            
+        };
+            array1.push(object1);
+
+           let user_data = localStorage.setItem("user_data",object1);
+
+          // assign data for object
+          userArr.push(userObj);
+          const str = JSON.stringify(userArr);
+          localStorage.setItem("user_data", str);
+          console.log(str);
+
+        
+
+        //  window.location.href=""
+
+
+      </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

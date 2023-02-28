@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/pages/getstart.css">
+
+</head>
+
+<body>
+
+
+    <div class="login-card">
+
+
+        <div class="card-header">
+            <div class="log">Sign up for your account</div>
+        </div>
+        <form id="form">
+            <div class="form-group">
+                <label  class="email"for="Email">Email:</label>
+                <input required="" name="password" id="email" type="email" />
+            </div>
+
+            <p class="">By clicking “Continue” below, you agree to the Atlassian Cloud Terms of Service and acknowledge the
+                Privacy Policy.
+
+            </p>
+
+
+        </form>
+    </div>
+
+
+
+    <script>
+
+
+        let userArr = [];
+
+
+        let form = document.getElementById("form");
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            if (window.localStorage.getItem("card-data") != null) {
+                userArr = JSON.parse(localStorage.getItem("card-data"));
+            }
+            let firstName = document.getElementById("firstname").value;
+            let lastName = document.getElementById("lastname").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let confirm_password = document.getElementById("confirm_password").value;
+
+
+            // assign data for object
+            let userObj = {
+                firstName: firstName,
+                lastName: lastName,
+                userEmail: email,
+                password: password,
+                confirm_password: confirm_password,
+            };
+            userArr.push(userObj);
+            console.log(userArr)
+
+
+            let str = JSON.stringify(userArr);
+            localStorage.setItem("card-data", str);
+            console.log(str);
+
+        });
+
+
+
+
+
+
+
+
+
+
+              // const email = document.getElementById("email").value;
+              // const password = document.getElementById("password").value;
+
+              // function checkinput (){
+              //   const email= email.trim();
+              //   const passwordvalue=password.value.trim();
+              // }
+              // if (emailvalue=="" || emailvalue == null){
+              //   alert("invaildinput");
+              // }
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

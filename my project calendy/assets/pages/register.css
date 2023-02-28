@@ -1,0 +1,106 @@
+body {
+    margin: 130px 0px 0px 0px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    background: linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+
+
+  }
+
+  .content {
+    color: whitesmoke;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+  
+.para {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+  .container {
+    display: block;
+    max-width: 1160px;
+    background-color: whitesmoke;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin: 50px 150px;
+  }
+  .container .title {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    padding: 30px 10px;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  .container .title::before {
+    position: absolute;
+    height: 2px;
+    width: 205px;
+    margin-bottom: 30px;
+  }
+  .container form .user-details {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+  
+    justify-content: space-between;
+    padding: 50px 0px;
+  }
+  form .user-details .input-box {
+    margin-bottom: 5px;
+    margin: 0px 15px;
+  }
+  .user-details .input-box .details {
+    display: block;
+    margin: 5px 0px;
+  }
+  .user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: all 0.3s ease;
+  }
+  .save {
+    margin: 0px 0px 0px 460px;
+  }
+  button {
+    background-color: crimson;
+    color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 100px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    height: 30px;
+  }
+  
+  
+  

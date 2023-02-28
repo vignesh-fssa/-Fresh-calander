@@ -1,0 +1,25 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(116, 189, 130);
+    font-family: "Poppins", sans-serif;
+
+}
+.login-card {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #ccc;
+    background-color:whitesmoke;
+    color: black;
+  }
+
+
+
+
+
+
